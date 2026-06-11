@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClubSignupForm</title>
+</head>
+<body>
+    <ul>
+        <li><span><strong>Câu lạc bộ</strong>: Tham gia các hoạt động câu lạc bộ giúp em <em>rèn luyện kỹ năng giao tiếp, làm việc nhóm và mở rộng kiến thức</em> xã hội.</span></li>
+        <li><span><strong>Đọc sách</strong>: Đọc sách giúp em <em>nâng cao kiến thức, cải thiện tư duy và học hỏi</em> thêm nhiều kinh nghiệm trong cuộc sống.</span></li>
+        <li><span><strong>Chơi thể thao</strong>: Chơi thể thao giúp em <em>rèn luyện sức khỏe</em>, tinh thần kỷ luật và khả năng phối hợp với người khác.</span></li>
+        <li><span><strong>Du lịch</strong>: Du lịch giúp em <em>khám phá những địa điểm mới</em>, tìm hiểu văn hóa và mở rộng góc nhìn về cuộc sống.</span></li>
+        <li><span><strong>Công nghệ</strong>: Em yêu thích tìm hiểu <em>công nghệ mới</em>, đặc biệt là các lĩnh vực liên quan đến <em>lập trình và phần mềm.</em></span></li>
+    </ul>
+    <form action="" id="club-form">
+        <div class="required-field">
+            <label for="fullname">Họ và tên</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Nhập họ tên...">
+        </div>
+        <div class="required-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Nhập Email...">
+        </div>
+        <div class="required-field">
+            <label for="phonenumber">Sđt</label>
+            <input type="number" name="phonenumber" id="phonenumber" placeholder="Nhập Sđt...">
+        </div>
+        <div class="required-field">
+            <label>Gender</label>
+            <label><input type="radio" name="gender" value="male">Nam</label>
+            <label><input type="radio" name="gender" value="female">Nữ</label>
+            <label><input type="radio" name="gender" value="unknown">Không biết</label>
+        </div>
+        <div class="required-field">
+            <label for="clb">Chọn CLB</label>
+            <select name="clb" id="clb">
+                <option value="" style="color: gray;">Vui lòng chọn clb</option>
+                <option value="Coding_Club">CLB Lập trình</option>
+                <option value="English_Club">CLB Tiếng Anh</option>
+                <option value="Communications_Club">CLB Truyền thông</option>
+            </select>
+        </div>
+        <div class="required-field">
+            <label>Sở thích</label>
+            <label><input type="checkbox" name="habit" value="reading">Đọc sách</label>
+            <label><input type="checkbox" name="habit" value="sport">Chơi thể thao</label>
+            <label><input type="checkbox" name="habit" value="travel">Du lịch</label>
+            <label><input type="checkbox" name="habit" value="technology">Công nghệ</label>
+        </div>
+        <div class="required-field">
+            <label for="message">Giới thiệu bản thân</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Giới thiệu về bản thân..."></textarea>
+        </div>
+        <div class="required-field">
+            <label><input id="agreement" type="checkbox" name="submit" value="submit">Tôi cam kết các thông tin trên là chính xác.</label>
+        </div>
+        <button>Gửi đăng ký</button>
+        <button type="reset">Làm lại</button>
+    </form>
+</body>
+</html>
