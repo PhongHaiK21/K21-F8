@@ -1,0 +1,36 @@
+.course-box {
+    background-color: white;
+    outline-style: solid;
+    outline-color: aqua;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: chocolate;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    text-align: center;
+    font-style: italic;
+    color: grey;
+}
+
+.description {
+    color: black;
+    height: 1.5rem;
+}
+
+.note {
+    background-color: aliceblue;
+    outline-style: solid;
+    outline-color: aquamarine;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+body {
+    background-color: antiquewhite;
+}
