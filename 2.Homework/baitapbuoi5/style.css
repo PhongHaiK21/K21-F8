@@ -1,0 +1,150 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Roboto","sans-serif";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1408px;
+}
+
+.logo img {
+    width: 168px;
+    height: 70px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+}
+
+header li a:hover {
+    color: #AD5727;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    font-weight: 400;
+}
+
+header>ul {
+    display: flex;
+    gap: 32px;
+    
+}
+
+main img {
+    width: 100%;
+}
+
+.top-banner img{
+    height: 800px;
+    margin-top: 32px;
+    object-fit: cover;
+}
+
+.About-Us {
+    display: block;
+    margin-top: 64px;
+    text-align: center;
+}
+
+.About-Us p {
+    text-transform: uppercase;
+    color: #BB7E52;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    column-gap: 30px;
+}
+
+.about-grid h1 {
+    font-weight: 700;
+}
+
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;   
+    text-align: center;     
+    min-height: 300px;     
+}
+
+.feature-image img {
+    width: 448px;
+    height: 448px;
+    object-fit: cover;     
+    border-radius: 4px;     
+}
+
+.feature-text {
+    padding: 20px;
+}
+
+.subtitle {
+    font-weight: 400;
+    color: #c48d6d;        
+    letter-spacing: 1px;   
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.bottom-banner img{
+    height: 400px;
+    object-fit: cover;
+    margin: 80px 0;
+    object-position: 50% 40%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+footer button {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: #3A3A3A;
+    color: white;
+    width: 99px;
+    height: 39px;
+}
+
+footer input {
+    width: 204px;
+    height: 39px;
+}
+
+footer img {
+    width: 168.6px;
+    height: 70px;
+}
