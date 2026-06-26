@@ -1,5 +1,53 @@
-.box {
-    background: green;
-    width: 100vw;
-    height: 100vh;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+.box { 
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 1408px;
+}
+
+ul {
+    list-style: none;
+}
+
+.list-item-left img {
+    height: auto;
+    width: 150px;
+    padding-right: 10px;
+}
+
+.list-item-left div {
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.list-item-right img {
+    height: auto;
+    width: 300px;
+}
+
+.list-item-right div {
+    background-color: antiquewhite;
+}
+
+.item-center img {
+    height: auto;
+    width: 600px;
+}
+
+.item-center {
+    margin: 0 30px;
+    background-color: antiquewhite;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
