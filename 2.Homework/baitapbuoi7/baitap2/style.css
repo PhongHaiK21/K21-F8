@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+html {
+    background-color: rgba(128, 128, 128, 0.151);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.Card-layer {
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    cursor: pointer;
+
+    transition: box-shadow 0.4s ease;
+}
+
+.skeleton {
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    z-index: 2;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.skeleton-img {
+    height: 155px;
+    background: linear-gradient(90deg, #eeeeee, #dddddd, #eeeeee);
+}
+
+.skeleton-content {
+    padding: 15px;
+}
+
+.line {
+    height: 10px;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.line-1 {
+    width: 100%;
+}
+
+.line-2 {
+    width: 70%;
+}
+
+.line-3 {
+    width: 45%;
+}
+
+
+.real-content {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.Card-image {
+    height: 155px;
+    background: linear-gradient(135deg, #9fb8ff, #c79bff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card-image span {
+    font-size: 60px;
+}
+
+.Card-content {
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+.Card-content h2 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.Card-content p {
+    font-weight: 400;
+    text-align: left;
+    margin-top: 5px;
+}
+
+
+.Card-layer:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.Card-layer:hover .skeleton {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Card-layer:hover .real-content {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+
+.note {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}

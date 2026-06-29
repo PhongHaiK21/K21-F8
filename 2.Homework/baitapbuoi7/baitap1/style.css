@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgba(128, 128, 128, 0.075);
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.menu-btn {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    gap: 4px;       
+}
+
+.menu-btn:hover {
+    background-color: rgba(128, 128, 128, 0.075);
+}
+
+.menu-btn .line {
+    display: block;
+    height: 2px;
+    width: 60%;
+    background-color: black;
+    border-radius: 5px;
+    transition: rotate 0.3s ease,
+        translate 0.3s ease 0.3s,
+        opacity 0.2s ease;
+}
+
+.menu-btn input:checked ~ .line {
+    transition:
+        translate 0.3s ease,
+        rotate 0.3s ease 0.3s,
+        opacity 0.2s ease 0.3s;
+}
+
+.menu-btn input:checked ~ .line-1 {
+    translate: 0 6px;
+    rotate: 45deg;
+}
+
+.menu-btn input:checked ~ .line-2 {
+    opacity: 0;
+}
+
+.menu-btn input:checked ~ .line-3 {
+    translate: 0 -6px;
+    rotate: -45deg;
+}
